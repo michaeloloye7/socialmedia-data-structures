@@ -16,7 +16,7 @@ import java.util.Set;
 public class Graph {
 
     //creating a hashmap with the custom DS FriendList
-    private Map<String, FriendList> adjacencyList;
+    private final Map<String, FriendList> adjacencyList;
 
     public Graph() {
         adjacencyList = new HashMap<>();
