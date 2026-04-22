@@ -1,3 +1,4 @@
+//file name: FriendList.java
 // custom linked list 
 
 public class FriendList {

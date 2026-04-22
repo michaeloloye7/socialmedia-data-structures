@@ -1,3 +1,4 @@
+// file name: User.java
 // represents the person/user 
 public class User {
     private String username;

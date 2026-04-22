@@ -1,3 +1,4 @@
+//file name: FriendNode.java
 // node for the adjacency list
 
 public class FriendNode {

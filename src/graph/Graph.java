@@ -1,7 +1,9 @@
-
+//file name: Graph.java
 import java.util.HashMap;
+import java.util.Map;
 
-// for adjacency list, BFS, shortest path
+
+// for custom adjacency list FriendList, BFS, shortest path
 // stores the connections, this is the actual graph
 
 public class Graph {
