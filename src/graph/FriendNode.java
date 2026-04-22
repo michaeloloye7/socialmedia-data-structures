@@ -1,5 +1,5 @@
 //file name: FriendNode.java
-// node for the adjacency list
+// node for the custom adjacency list FriendList
 
 public class FriendNode {
     String name;
@@ -7,5 +7,7 @@ public class FriendNode {
 
     public FriendNode(String name) {
         this.name = name;
+        this.next = null;
     }
+
 }

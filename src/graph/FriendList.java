@@ -92,5 +92,10 @@ public class FriendList {
             }
         }    
 
+public FriendNode getHead() {
+    return head;
+}
+
+
 }
 
