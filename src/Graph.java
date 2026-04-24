@@ -65,6 +65,31 @@ public class Graph {
             System.out.println(u1 + " and " + u2 + " are now friends.");
     }
     
+
+    //REMOVE FRIENDSHIP
+    public void removeFriendship(String u1, String u2) {
+        //check if both users exist
+        if(!adjacencyList.containsKey(u1) || !adjacencyList.containsKey(u2)) {
+            System.out.println("One or both users do not exist.");
+            return; 
+        }
+
+        //get their friends lists
+        FriendList list1 = adjacencyList.get(u1); 
+        FriendList list2 = adjacencyList.get(u2);
+
+        //avoid removing friendship if friendship does not exist
+        if(!list1.contains(u2)){
+            System.out.println("They already aren't friends"); 
+            return;
+        }
+
+        list1.remove(u2); 
+        list2.remove(u1); 
+        System.out.print(u2 + " has been removed from " + u1 + "'s friend list.");
+    }   
+
+
     // REMOVE USER
     public void removeUser(String username) {
         // check if  user exists
