@@ -1,3 +1,8 @@
+// Mini Social Network Application
+// Team: Nandi Pitts, Michael Oloye, Saniya Alexander, Taylor Stockdale
+// Course: Data Structures
+// Date: April 30, 2026
+
 //file name: Graph.java
 import java.util.ArrayList;
 import java.util.Collections;
@@ -18,6 +23,7 @@ public class Graph {
     //creating a hashmap with the custom DS FriendList
     private final Map<String, FriendList> adjacencyList;
 
+    // constructor
     public Graph() {
         adjacencyList = new HashMap<>();
     }

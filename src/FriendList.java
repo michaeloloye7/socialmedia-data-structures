@@ -1,14 +1,21 @@
+// Mini Social Network Application
+// Team: Nandi Pitts, Michael Oloye, Saniya Alexander, Taylor Stockdale
+// Course: Data Structures
+// Date: April 30, 2026
+
+
 // file name: FriendList.java
 // custom linked list 
 
 public class FriendList {
     private FriendNode head;
 
+    // constructor
     public FriendList() {
         this.head = null;
     }
 
-    // methods to implement
+    //ADD
     public void add(String friendName) {
 
         FriendNode newNode = new FriendNode(friendName);
@@ -28,6 +35,7 @@ public class FriendList {
         current.next = newNode;
     }
 
+    //REMOVE
     public void remove(String friendName) {
          // if the list is empty then return
         if (head == null) {
@@ -57,6 +65,7 @@ public class FriendList {
 
     }
 
+    //CONTAINS
     public boolean contains(String friendName) {
          // if the list is empty then return
         if (head == null) {
@@ -76,7 +85,7 @@ public class FriendList {
             return false;
         }
     
-
+    //PRINT ALL
     public void printAll() {
          // if list is empty
             if (head == null) {

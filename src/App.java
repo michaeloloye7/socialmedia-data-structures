@@ -1,4 +1,8 @@
-//file App.java
+// Mini Social Network Application
+// Team: Nandi Pitts, Michael Oloye, Saniya Alexander, Taylor Stockdale
+// Course: Data Structures
+// Date: April 30, 2026
+
 // file for the INTERFACE 
 
 import java.util.Scanner;
@@ -11,7 +15,7 @@ public class App {
         Graph graph = new Graph();
 
 
-
+        // for displaying the menu and handling user input
         while (true) {
             ASCIIArt.printMenu();
             String choice = scanner.nextLine();

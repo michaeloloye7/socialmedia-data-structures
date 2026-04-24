@@ -1,3 +1,9 @@
+// Mini Social Network Application
+// Team: Nandi Pitts, Michael Oloye, Saniya Alexander, Taylor Stockdale
+// Course: Data Structures
+// Date: April 30, 2026
+
+
 //file name: ASCIIArt.java
 // for ASCII interface to keep App.java clean
 public class ASCIIArt {
