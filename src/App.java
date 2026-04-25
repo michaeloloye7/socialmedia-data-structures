@@ -35,19 +35,26 @@ public class App {
                     graph.addFriendship(u1, u2);
                 }
 
-                case "3" -> {
+                case "3" ->{
+                    System.out.print("Enter first user: ");
+                    String u1 = scanner.nextLine();
+                    System.out.print("Enter second user: ");
+                    String u2 = scanner.nextLine();
+                    graph.removeFriendship(u1, u2);
+                }
+                case "4" -> {
                     System.out.print("Enter username to view friends: ");
                     String viewUser = scanner.nextLine();
                     graph.displayFriends(viewUser);
                 }
 
-                case "4" -> {
+                case "5" -> {
                     System.out.print("Enter username for suggestions: ");
                     String sugUser = scanner.nextLine();
                     graph.suggestFriends(sugUser);
                 }
 
-                case "5" -> {
+                case "6" -> {
                     System.out.print("Enter starting user: ");
                     String start = scanner.nextLine();
                     System.out.print("Enter target user: ");
@@ -55,7 +62,7 @@ public class App {
                     graph.shortestPath(start, end);
                 }
 
-                case "6" -> {
+                case "7" -> {
                     System.out.print("Enter first user: ");
                     String m1 = scanner.nextLine();
                     System.out.print("Enter second user: ");
@@ -63,13 +70,13 @@ public class App {
                     graph.mutualFriends(m1, m2);
                 }
 
-                case "7" -> {
+                case "8" -> {
                     System.out.print("Enter username to remove: ");
                     String removeUser = scanner.nextLine();
                     graph.removeUser(removeUser);
                 }
 
-                case "8" -> {
+                case "9" -> {
                     System.out.println("Exiting...");
                     return;
                 }
